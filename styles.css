@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+* {
+    font-size: 16px;
+    scrollbar-width: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #dbebeb;
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+
+}
+
+button {
+    font-family: "Inter", sans-serif;
+}
+
+.main {
+    display: flex;
+    width: 90%;
+    height: 100%;
+    margin: 30px 50px 40px 50px;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 90vh;
+
+}
+
+.textArea {
+    height: 70%;
+}
+
+.textArea textarea {
+    height: 100%;
+    outline: none;
+    width: 95%;
+    resize: none;
+    padding: 1rem;
+    border-radius: 25px;
+    background: transparent;
+    border: none;
+    font-size: 1.1rem;
+}
+
+textarea::placeholder {
+    color: #006666;
+    font-weight: 550;
+
+}
+
+.main-buttons {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem
+}
+
+.tip {
+    display: flex;
+    gap: 5px;
+    padding-left: 3rem;
+}
+
+.btn-cont {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.encrypt {
+    width: 40%;
+    height: 4rem;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    background-color: #006666;
+}
+
+
+.decrypt {
+    width: 40%;
+    height: 4rem;
+    border-radius: 24px;
+    background: #f0f0f0;
+    border: 1px solid #006666;
+}
+
+
+
+.output {
+    box-shadow: 0px 0px 18px -6px rgba(0, 0, 0, 0.1);
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+.output-content {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.output-content-img {
+    height: 60%;
+}
+
+.output-content-img img {
+    width: 100%;
+    object-fit: contain;
+    height: 100%;
+}
+
+.output-content-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    width: 75%;
+    height: auto;
+}
+
+#output-text {
+    color: #006666;
+    font-size: 1.2rem;
+    font-weight: bold;
+    overflow: auto;
+    width: 100%;
+}
+
+.output-buttons {
+
+    height: 10%;
+    display: none;
+    justify-content: space-evenly;
+}
+
+.output-buttons button {
+    border: 1px solid #006666;
+    border-radius: 20px;
+    background-color: transparent;
+    width: 45%;
+    height: 3rem;
+}
+
+footer {
+    text-align: center;
+    height: 5rem;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    background-color: #006666;
+}
+
+@media(min-width:320px) and (max-width:435px) {
+    * {
+        font-size: 10px;
+    }
+
+    body {
+        gap: 200px;
+    }
+
+    .main {
+        flex-direction: column;
+        margin: auto;
+        gap: 50px;
+    }
+
+    .input {
+        width: 100%;
+    }
+
+    .textArea {
+        height: 100%
+    }
+
+    ;
+
+    .textArea textarea {
+        font-size: 1.5rem;
+        width: auto;
+    }
+
+    .main-buttons {
+        align-items: center;
+    }
+
+    .tip {
+        padding-left: 0;
+    }
+
+    .btn-cont {
+        width: 100%;
+    }
+
+    .btn-cont button {
+        width: auto;
+        min-width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .encrypt,
+    .decrypt {
+        border-radius: 15px;
+        height: 3rem;
+    }
+
+
+    .output {
+        width: 100%;
+        padding: 0;
+        justify-content: unset;
+        height: auto;
+        gap: 20px;
+    }
+
+    .output-content {
+        justify-content: unset;
+    }
+
+    .output-content-img {
+        display: none;
+    }
+
+    .output-content-text {
+        gap: 1rem;
+        width: 90%;
+        margin: 1rem auto 1rem auto;
+    }
+
+    .output-buttons {
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .output-buttons button {
+        border-radius: 15px;
+        height: 3rem;
+        font-size: 1.2rem;
+        width: 40%;
+
+    }
+
+    #output-text {
+        font-size: 1.4rem;
+    }
+
+    #guide-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media(min-width:2161px) {
+    * {
+        font-size: 28px;
+    }
+
+    .textArea textarea {
+        font-size: 2rem;
+    }
+
+    #output-text {
+        font-size: 2rem;
+    }
+
+    #guide-text {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 2rem;
+    }
+}
